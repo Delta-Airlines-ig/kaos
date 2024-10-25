@@ -1,10 +1,14 @@
 package net.aristokrats.kaos;
 
 import net.fabricmc.api.ModInitializer;
+import net.aristokrats.kaos.block.ModBlocks;
+import net.aristokrats.kaos.item.ModItemGroups;
 //import net.aristokrats.kaos.item.ModItemGroups;
 import net.aristokrats.kaos.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+
 
 public class Kaos implements ModInitializer {
 	public static final String MOD_ID = "kaos";
@@ -20,6 +24,9 @@ public class Kaos implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }
