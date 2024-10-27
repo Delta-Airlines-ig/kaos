@@ -1,5 +1,4 @@
 package net.aristokrats.kaos.item;
-//test of if I can change the code in github
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.aristokrats.kaos.Kaos;
 import net.aristokrats.kaos.block.ModBlocks;
