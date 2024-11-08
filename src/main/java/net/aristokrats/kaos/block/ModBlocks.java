@@ -1,8 +1,9 @@
 package net.aristokrats.kaos.block;
 
-import net.aristokrats.kaos.TutorialMod;
+import net.aristokrats.kaos.Kaos;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -17,16 +18,16 @@ public static final Block RUBY_BLOCK = registerBlock("ruby_block",
    
    private static Block registerBlock(String name, Block block) {
        registerBlockItem(name, block);
-       return Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, name), block);
+       return Registry.register(Registries.BLOCK, Identifier.of(Kaos.MOD_ID, name), block);
    }
 
    private static Item registerBlockItem(String name, Block block) {
-       return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name),
+       return Registry.register(Registries.ITEM, Identifier.of(Kaos.MOD_ID, name),
            new BlockItem(block, new Item.Settings()));
    }
 
    public static void registerModBlocks() {
-       TutorialMod.LOGGER.info("Registering ModBlocks for " + TutorialMod.MOD_ID);
+       Kaos.LOGGER.info("Registering ModBlocks for " + Kaos.MOD_ID);
    }
    
 }

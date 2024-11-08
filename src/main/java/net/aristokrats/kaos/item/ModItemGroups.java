@@ -24,6 +24,6 @@ public class ModItemGroups {
 
 
    public static void registerItemGroups() {
-       TutorialMod.LOGGER.info("Register Item Groups for " + TutorialMod.MOD_ID);
+       Kaos.LOGGER.info("Register Item Groups for " + Kaos.MOD_ID);
     }
 }
