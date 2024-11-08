@@ -15,7 +15,8 @@ public class ModItemGroups {
            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entires) -> {
                        entires.add(ModItems.RUBY);
-                       //entires.add(ModItems.RAW_RUBY);
+                       entires.add(ModItems.RAW_RUBY);
+                       entires.add(ModBlocks.RUBY_BLOCK);
                        ModBlocks.registerModBlocks();
 
 

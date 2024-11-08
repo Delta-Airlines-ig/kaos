@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "kaos:block/ruby_block"
+        }
+    }
+}

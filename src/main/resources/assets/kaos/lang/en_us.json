@@ -1,5 +1,10 @@
 {
     "item.kaos.ruby": "Ruby",
-    "itemgroup.ruby": "Ruby Tutorial Group"
+    "item.kaos.raw_ruby": "Raw Ruby",
+
+    "block.kaos.ruby_block": "Block of Ruby",
+
+
+    "itemgroup.ruby": "Ruby Group"
 
 }
