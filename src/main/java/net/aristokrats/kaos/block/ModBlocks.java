@@ -15,9 +15,7 @@ public class ModBlocks {
 public static final Block RUBY_BLOCK = registerBlock("ruby_block",
        new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
 
- public static final RegistryObject<Block> FAX_MACHINE = registerBlock("fax_machine",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
-   
+
    private static Block registerBlock(String name, Block block) {
        registerBlockItem(name, block);
        return Registry.register(Registries.BLOCK, Identifier.of(Kaos.MOD_ID, name), block);
